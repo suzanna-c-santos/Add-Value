@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard do Projeto Senado Federal | CT 0145/2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen">
+
+  <!-- Header Executivo -->
+  <header class="bg-brand-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
+          <svg viewBox="0 0 100 100" class="w-6 h-6">
+            <path d="M30,20 Q35,35 30,50 Q25,35 30,20" fill="#0369a1" opacity="0.9"/>
+            <path d="M70,50 Q65,35 70,20 Q75,35 70,50" fill="#0284c7" opacity="0.9"/>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="bg-amber-500 text-slate-950 text-xs font-black px-2.5 py-1 rounded">CT 0145/2026</span>
+            <h1 class="text-xl font-bold tracking-tight">Senado Federal</h1>
+          </div>
+          <p class="text-xs text-slate-300 mt-1"><strong>Gerência:</strong> Suzanna Santos (Add Value) | <strong>Data-base:</strong> 05/10/2026</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span> Atenção Crítica
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- KPIs Principais -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Entrega Lenovo</span>
+          <i class="fa-solid fa-truck-ramp-box text-blue-600 bg-blue-50 p-2 rounded-lg"></i>
+        </div>
+        <div class="mt-2">
+          <div class="text-2xl font-black text-slate-900">30/10/2026</div>
+          <p class="text-xs text-amber-600 font-medium mt-0.5">Previsão atualizada</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Atividades Físicas</span>
+          <i class="fa-solid fa-wrench text-amber-600 bg-amber-50 p-2 rounded-lg"></i>
+        </div>
+        <div class="mt-2">
+          <div class="text-2xl font-black text-slate-900">03 a 05/11</div>
+          <p class="text-xs text-red-600 font-medium mt-0.5"><i class="fa-solid fa-circle-exclamation"></i> 02/11 feriado</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Marco Fase 2</span>
+          <i class="fa-solid fa-flag-checkered text-emerald-600 bg-emerald-50 p-2 rounded-lg"></i>
+        </div>
+        <div class="mt-2">
+          <div class="text-2xl font-black text-slate-900">30/11/2026</div>
+          <p class="text-xs text-emerald-600 font-medium mt-0.5"><i class="fa-solid fa-circle-exclamation"></i> 15/11 feriado</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Equipamentos Hitachi</span>
+          <i class="fa-solid fa-check-double text-purple-600 bg-purple-50 p-2 rounded-lg"></i>
+        </div>
+        <div class="mt-2">
+          <div class="text-2xl font-black text-slate-900">100% Prontos</div>
+          <p class="text-xs text-purple-600 font-medium mt-0.5">Em posse da Add Value</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localidades e Endereços -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h3 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-building text-brand-600"></i> Site 1: PRODASEN (Principal)
+        </h3>
+        <div class="text-xs text-slate-600 space-y-2">
+          <p><strong>Local:</strong> Sede PRODASEN, Via N2, Bloco 1, Senado Federal, Brasília/DF</p>
+          <p><strong>Recebimento:</strong> Sala de Descompressão, Ala C, próximo à sala-cofre</p>
+          <p><strong>Responsável:</strong> Ciro André Freitas dos Santos | CPF: 03014791512 | Tel: (61) 3303-3672</p>
+          <p class="mt-3 p-2 bg-blue-50 border border-blue-200 rounded"><strong>Cliente:</strong> Senado Federal (CNPJ: 00.530.279/0001-15)</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h3 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-server text-brand-600"></i> Site 2: CETEC Norte (DR)
+        </h3>
+        <div class="text-xs text-slate-600 space-y-2">
+          <p><strong>Local:</strong> CETEC Norte, Complexo Câmara dos Deputados, Via N3, Bloco B, Brasília/DF</p>
+          <p><strong>Recebimento:</strong> Antessala da sala segura</p>
+          <p><strong>Responsável:</strong> Ciro André Freitas dos Santos | CPF: 03014791512 | Tel: (61) 3303-3672</p>
+          <p class="mt-3 p-2 bg-blue-50 border border-blue-200 rounded"><strong>Cliente:</strong> Senado Federal (CNPJ: 00.530.279/0001-15)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estrutura de Coordenação Fase 2 -->
+    <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-users-gear text-brand-600"></i> Divisão de Responsabilidades — Fase 2
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <div class="p-4 rounded-lg bg-blue-50/60 border border-blue-200">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded">COORDENAÇÃO GERAL</span>
+            <h3 class="font-bold text-sm text-slate-900">Add Value</h3>
+          </div>
+          <p class="text-xs text-slate-600 mb-3">Gestão executiva, recebimento de equipamentos, conferência de materiais, integração Commvault e conectividade lógica.</p>
+          <div class="text-xs font-semibold text-slate-800 space-y-1">
+            <div><i class="fa-solid fa-user-tie text-blue-600 mr-1"></i> <strong>Ponto Focal:</strong> Suzanna Santos</div>
+            <div><i class="fa-solid fa-user text-blue-600 mr-1"></i> <strong>Técnico:</strong> Roberto Neto</div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-red-50/60 border border-red-200">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded">SWITCHES</span>
+            <h3 class="font-bold text-sm text-slate-900">Hitachi Vantara</h3>
+          </div>
+          <p class="text-xs text-slate-600 mb-3">Implementação dos switches SAN Brocade G720 (02 unidades em cada site) com conectividade Fibre Channel 32 Gbps redundante.</p>
+          <div class="text-xs font-semibold text-slate-800">
+            <i class="fa-solid fa-user-tie text-red-600 mr-1"></i> <strong>Ponto Focal:</strong> Marcelo Gonçalves (PM)
+          </div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-amber-50/60 border border-amber-200">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-amber-600 text-white text-xs font-bold px-2 py-0.5 rounded">STORAGE & LÓGICA</span>
+            <h3 class="font-bold text-sm text-slate-900">Focus / Lenovo</h3>
+          </div>
+          <p class="text-xs text-slate-600 mb-3">Instalação física de racks/energia/cabeamento e configuração lógica do ThinkSystem DE4800H (Storage arrays).</p>
+          <div class="text-xs font-semibold text-slate-800 space-y-1">
+            <div><i class="fa-solid fa-wrench text-amber-600 mr-1"></i> <strong>Gabriel Bolán:</strong> Instalação Física</div>
+            <div><i class="fa-solid fa-network-wired text-amber-600 mr-1"></i> <strong>Alexandre Rogoski:</strong> Implementação Lógica</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Infraestrutura de Hardware -->
+    <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-microchip text-brand-600"></i> Infraestrutura de Hardware
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <div>
+          <h3 class="text-sm font-bold text-slate-900 mb-3 pb-2 border-b-2 border-blue-300">Site 1: PRODASEN (Principal)</h3>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="p-2.5 bg-blue-50/50 rounded border border-blue-100">
+              <strong class="text-slate-900">02x Servidores Lenovo ThinkSystem SR630 V4 (1U)</strong>
+              <br/>MediaAgents Commvault primários | 2x Intel Xeon 6515P (16c), 256GB RAM, 3x SSDs NVMe
+            </li>
+            <li class="p-2.5 bg-blue-50/50 rounded border border-blue-100">
+              <strong class="text-slate-900">02x Switches SAN Brocade G720 (1U)</strong>
+              <br/>48 portas 32 Gbps Fibre Channel | Transceptores ópticos de alta performance
+            </li>
+            <li class="p-2.5 bg-blue-50/50 rounded border border-blue-100">
+              <strong class="text-slate-900">01x Storage Array Lenovo ThinkSystem DE4800H (4U60)</strong>
+              <br/>60x 24TB NL-SAS | 1.44 PB bruto | Controladoras duplas ativo-ativo | Disk Library primário
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-slate-900 mb-3 pb-2 border-b-2 border-emerald-300">Site 2: CETEC Norte (DR)</h3>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="p-2.5 bg-emerald-50/50 rounded border border-emerald-100">
+              <strong class="text-slate-900">02x Servidores Lenovo ThinkSystem SR630 V4 (1U)</strong>
+              <br/>Configuração idêntica | Contingência geográfica e restauração local
+            </li>
+            <li class="p-2.5 bg-emerald-50/50 rounded border border-emerald-100">
+              <strong class="text-slate-900">02x Switches SAN Brocade G720 (1U)</strong>
+              <br/>Isolamento de tráfego entre malhas A e B | Topologia redundante
+            </li>
+            <li class="p-2.5 bg-emerald-50/50 rounded border border-emerald-100">
+              <strong class="text-slate-900">01x Storage Array Lenovo ThinkSystem DE4800H (4U60)</strong>
+              <br/>60x 24TB NL-SAS | 1.44 PB bruto | Repositório de cópias replicadas (síncrono/assíncrono)
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Licenciamento e Garantias -->
+    <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-certificate text-brand-600"></i> Licenciamento Commvault e Garantias
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <div>
+          <h3 class="text-sm font-bold text-slate-900 mb-3 text-brand-600">Pacotes de Software</h3>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">CV-DPP-FT</strong>
+              <br/>Commvault Cloud Cyber Recovery | Per Front-End Terabyte | Subscription
+            </li>
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">CV-DPP-VM10</strong>
+              <br/>Cyber Recovery for Virtual Machines | Per VM (10-Pack) | Subscription
+            </li>
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">CV-UDPP-FT</strong>
+              <br/>Cyber Recovery for Unstructured Data | Per Front-End Terabyte | Subscription
+            </li>
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">ED-TR-UNIT</strong>
+              <br/>Treinamento Oficial Remoto | Até 4 participantes
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-slate-900 mb-3 text-brand-600">Termos de Garantia e Suporte</h3>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">Garantia Hardware (Lenovo)</strong>
+              <br/>Cobertura de 3 anos on-site | Componentes críticos + suporte técnico 24x7
+            </li>
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">Operação Assistida</strong>
+              <br/>200 horas incluídas | Apoio operacional, troubleshooting, suporte avançado
+            </li>
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">Suporte Commvault</strong>
+              <br/>Premium support incluído | Homologação de patches e atualizações
+            </li>
+            <li class="p-2.5 bg-slate-50 rounded border border-slate-200">
+              <strong class="text-slate-900">SLA de Resposta</strong>
+              <br/>P1 (Crítico): 4h | P2 (Alto): 8h | P3 (Normal): 24h
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sequência + Checklist + Técnicos (3 colunas) -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Sequência de Execução -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-timeline text-brand-600"></i> Sequência de Execução
+        </h2>
+        <div class="relative border-l-2 border-slate-200 ml-4 space-y-6">
+          
+          <div class="relative pl-6">
+            <span class="absolute -left-2.5 top-0.5 w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] font-bold">1</span>
+            <h4 class="text-sm font-bold text-slate-900">Entrega, Recebimento e Conferência</h4>
+            <p class="text-xs text-slate-500"><strong>30/10/2026</strong> | Rafael Moraes recebe e confere equipamentos Lenovo nas dependências da Add Value em Brasília.</p>
+          </div>
+
+          <div class="relative pl-6">
+            <span class="absolute -left-2.5 top-0.5 w-5 h-5 rounded-full bg-amber-500 text-white flex items-center justify-center text-[10px] font-bold">2</span>
+            <h4 class="text-sm font-bold text-slate-900">Instalação Física Coordenada</h4>
+            <p class="text-xs text-slate-500"><strong>03-05/11/2026</strong> | Focus (Gabriel Bolán) + Add Value (Roberto Neto) + Hitachi (Marcelo Gonçalves). Racking, cabeamento, energia.</p>
+          </div>
+
+          <div class="relative pl-6">
+            <span class="absolute -left-2.5 top-0.5 w-5 h-5 rounded-full bg-slate-400 text-white flex items-center justify-center text-[10px] font-bold">3</span>
+            <h4 class="text-sm font-bold text-slate-900">Implementação Lógica e Commvault</h4>
+            <p class="text-xs text-slate-500">Configuração ThinkSystem (Alexandre Rogoski) + integração Commvault (Add Value). Validação de racks, switches e storage.</p>
+          </div>
+
+          <div class="relative pl-6">
+            <span class="absolute -left-2.5 top-0.5 w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px] font-bold">4</span>
+            <h4 class="text-sm font-bold text-slate-900">Testes e Aceite</h4>
+            <p class="text-xs text-slate-500"><strong>Marco: 30/11/2026</strong> | Homologação técnica, documentação e assinatura de aceite. (15/11 é feriado)</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Checklist Pré-Atividade Presencial -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-base font-bold text-slate-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-list-check text-brand-600"></i> Checklist Pré-Atividade Presencial
+        </h2>
+        <div class="space-y-2 text-xs">
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" checked disabled class="mt-0.5 rounded text-emerald-600">
+            <span>Racks e PDUs validados (U40-U42)</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" checked disabled class="mt-0.5 rounded text-emerald-600">
+            <span>Switches Hitachi conferidos na Add Value</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Crachás/acessos liberados (técnicos)</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Agenda bloqueada (03-05/11 + 15/11)</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Portas e IPs liberados (PRODASEN)</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Commvault homologado e ativo</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Confirmação entrega no cliente (PRODASEN/CETEC)</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Passagem aérea — Roberto Neto</span>
+          </label>
+          <label class="flex items-start gap-2 text-slate-700">
+            <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+            <span>Estadia reservada — Roberto Neto (03-05/11)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Técnicos em Campo -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h2 class="text-base font-bold text-slate-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-id-card-clip text-brand-600"></i> Técnicos Escalados (03/11)
+        </h2>
+        <ul class="text-xs text-slate-600 space-y-2">
+          <li class="p-2 bg-blue-50/60 rounded border border-blue-100">
+            <strong class="text-slate-900">Roberto Neto</strong>
+            <br/><span class="bg-blue-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Add Value</span>
+          </li>
+          <li class="p-2 bg-amber-50/60 rounded border border-amber-100">
+            <strong class="text-slate-900">Elielson Alves Pereira</strong>
+            <br/>RG: 4124074 | <span class="bg-amber-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Focus</span>
+          </li>
+          <li class="p-2 bg-amber-50/60 rounded border border-amber-100">
+            <strong class="text-slate-900">Felipe Gonçalves dos Santos</strong>
+            <br/>RG: 2549244 | <span class="bg-amber-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Focus</span>
+          </li>
+          <li class="p-2 bg-amber-50/60 rounded border border-amber-100">
+            <strong class="text-slate-900">Paulo Henrique Oliveira</strong>
+            <br/>RG: 3607158 | <span class="bg-amber-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Focus</span>
+          </li>
+          <li class="p-2 bg-amber-50/60 rounded border border-amber-100">
+            <strong class="text-slate-900">Filipe Borges Bispo</strong>
+            <br/>RG: 3118575 | <span class="bg-amber-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">Focus</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Equipes Envolvidas — LARGURA TOTAL -->
+    <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-users text-brand-600"></i> Equipes Envolvidas
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <div>
+          <h3 class="text-sm font-bold text-slate-900 mb-3 pb-2 border-b-2 border-blue-300">Add Value</h3>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">José Lima</strong><br/>Representante Comercial / Preposto Contratual</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Suzanna Santos</strong><br/>Gerente de Projetos</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Adriana Segurasse</strong><br/>Gestão de Serviços e Operações</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Flavio Moro</strong><br/>Líder Técnico de Proteção de Dados</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Roberto Neto</strong><br/>Consultor Técnico</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Rafael Moraes</strong><br/>Business Development Manager</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Alisson Henrique</strong><br/>Head de Infraestrutura</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Leonardo Michetti</strong><br/>Liderança de Serviços</li>
+            <li class="p-2 bg-blue-50/50 rounded border border-blue-100"><strong class="text-slate-900">Charles Santana</strong><br/>Equipe Técnica</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-slate-900 mb-3 pb-2 border-b-2 border-emerald-300">Senado Federal</h3>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li class="p-2 bg-emerald-50/50 rounded border border-emerald-100"><strong class="text-slate-900">Matheus Antonio de Mesquita Bortolini</strong><br/>NGCTI – Gestão Contratual</li>
+            <li class="p-2 bg-emerald-50/50 rounded border border-emerald-100"><strong class="text-slate-900">Leonardo Arruda do Amaral Andrade</strong><br/>NGCTI – Gestão Contratual</li>
+            <li class="p-2 bg-emerald-50/50 rounded border border-emerald-100"><strong class="text-slate-900">Lucireis Fernandes de Carvalho</strong><br/>NGCTI – Gestão Contratual</li>
+            <li class="p-2 bg-emerald-50/50 rounded border border-emerald-100"><strong class="text-slate-900">Fabrício Santos Cardoso</strong><br/>Fiscalização Técnica</li>
+            <li class="p-2 bg-emerald-50/50 rounded border border-emerald-100"><strong class="text-slate-900">Thor Castilhos Sanchotene</strong><br/>Fiscalização Técnica</li>
+            <li class="p-2 bg-emerald-50/50 rounded border border-emerald-100"><strong class="text-slate-900">Ciro André Freitas dos Santos</strong><br/>Fiscalização Técnica / Responsável Recebimento</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Riscos Críticos e Mitigação — LARGURA TOTAL -->
+    <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-triangle-exclamation text-brand-600"></i> Riscos Críticos e Mitigação
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        
+        <div class="p-3 bg-red-50/60 rounded border border-red-200">
+          <strong class="text-red-700 text-xs">Atraso Logístico Lenovo</strong>
+          <p class="text-xs text-slate-600 mt-1">Equipamentos podem não chegar em 30/10. <strong>Ação:</strong> Monitoramento diário com Focus até confirmação de despacho.</p>
+        </div>
+
+        <div class="p-3 bg-yellow-50/60 rounded border border-yellow-200">
+          <strong class="text-yellow-700 text-xs">Desalinhamento de Equipes</strong>
+          <p class="text-xs text-slate-600 mt-1">Conflito de agendas entre Add Value, Hitachi e Focus. <strong>Ação:</strong> Cronograma único com revisão diária (Marcelo, Gabriel, Alexandre).</p>
+        </div>
+
+        <div class="p-3 bg-yellow-50/60 rounded border border-yellow-200">
+          <strong class="text-yellow-700 text-xs">Indisponibilidade de Viagem</strong>
+          <p class="text-xs text-slate-600 mt-1">Roberto Neto ou técnicos Focus com impedimentos. <strong>Ação:</strong> Bloqueio de agenda antes de 30/10 + passagens confirmadas.</p>
+        </div>
+
+        <div class="p-3 bg-red-50/60 rounded border border-red-200">
+          <strong class="text-red-700 text-xs">Logística Add Value → Sites</strong>
+          <p class="text-xs text-slate-600 mt-1">Transporte de materiais das dependências Add Value para PRODASEN/CETEC. <strong>Ação:</strong> Coordenar com Ciro André rota de entrega e disponibilidade de espaço antes de 03/11.</p>
+        </div>
+
+        <div class="p-3 bg-orange-50/60 rounded border border-orange-200">
+          <strong class="text-orange-700 text-xs">Janela Crítica Curta</strong>
+          <p class="text-xs text-slate-600 mt-1">31 dias entre entrega (30/10) e marco final (30/11). <strong>Ação:</strong> Pré-requisitos homologados antes de 30/10; testes paralelos pós-física.</p>
+        </div>
+
+        <div class="p-3 bg-orange-50/60 rounded border border-orange-200">
+          <strong class="text-orange-700 text-xs">Feriados Nacionais</strong>
+          <p class="text-xs text-slate-600 mt-1">02/11 e 15/11 reduzem dias úteis (8 dias efetivos). <strong>Ação:</strong> Priorizar testes críticos 03-05 e 06-14/11.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-4 mt-6">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500">
+      Painel Integrado de Gestão de Projetos — <strong>Add Value</strong> • Senado Federal (CT 0145/2026) • Atualizado em 05/10/2026
+    </div>
+  </footer>
+
+</body>
+</html>
